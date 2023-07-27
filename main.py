@@ -19,7 +19,7 @@ dotenv_path = Path('.\\templates')
 print(dotenv_path)
 load_dotenv()
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ['APP_SECRET_KE']
+app.config['SECRET_KEY'] = os.environ['APP_SECRET_KEY']
 # app.config["SECRET_KEY"] = secrets.token_hex()
 ckeditor = CKEditor(app)
 Bootstrap(app)
